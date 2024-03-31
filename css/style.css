@@ -1,0 +1,59 @@
+
+button{
+    font-size: 20px;
+    margin-top: 30px;
+    border-bottom: 30px;
+    border-color: black;
+    background-color:white;
+    border-radius: 60px;;
+    font-family: consolas;    
+}
+
+
+
+a:hover {
+    color: red; /* Cambia esto al color que prefieras */
+}
+
+a{
+
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    background-image: url(../images/fondo.jpg);
+    background-size: cover; /* Esto hará que la imagen se estire para cubrir completamente el cuerpo */
+    background-repeat: no-repeat; 
+}
+
+center{
+
+    display: block;
+    margin-top: 120px;
+}
+
+img{
+
+    display: block;
+}
+
+p{color: gray; font-size: 25px; 
+    font-size:30px; -webkit-text-stroke: 1px;
+     -webkit-text-stroke-color: black
+    }
+
+h1{
+    color: white; font-size: 40px;
+
+}
+
+h2{
+    color: white;
+
+}
+
+td{
+    color: white; font-size: 30px;
+
+}
