@@ -1,4 +1,5 @@
 
+
 button{
     font-size: 20px;
     margin-top: 30px;
@@ -23,7 +24,7 @@ a{
 
 .menu {
     background-image: url(../images/fondo.jpg);
-    background-size: cover; /* Esto hará que la imagen se estire para cubrir completamente el cuerpo */
+    background-size: cover; 
     background-repeat: no-repeat; 
 }
 
