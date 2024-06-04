@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,44 +7,43 @@
     <title>Perros</title>
     <link rel="icon" type="image/png" href="../images/icono.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">   
-    <link rel="stylesheet" href="../css/style.css" />
-   
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">   
   </head>
   <body class="menu">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">ONG - Ayuda un peludo</a>
+          <a class="navbar-brand" href="/">ONG - Ayuda un peludo</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                   <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contacto</a>
+                      <a class="nav-link" href="/contact">Contacto</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="login.html">Iniciar sesión</a>
+                      <a class="nav-link" href="/login">Iniciar sesión</a>
                   </li>
               </ul>
           </div>
       </div>
   </nav>
-  <a href="index.html"><button>VOLVER</button></a>
+  <a href="/"><button>VOLVER</button></a>
     <center>
       <h1>Perros en adopcion</h1>
       <p>
-        Esta es la lista de perro para adopción actualmente al hacer <br>click en su
-        nombre se podra ver mas informacion sobre el perro.
+      Esta es la lista de perro para adopción actualmente al hacer <br>click en su
+      nombre se podra ver mas informacion sobre el perro.
       </p>
       <h2>Perros que buscan familias:</h2>
-      <img src="../images/perro1.jpg" alt="perro" width="100" height="100" />
-      <a href="../html/perros/pcopito.html"><button>Copito</button></a>
+      <img src="{% static 'images/perro1.jpg' %}" alt="perro" width="100" height="100" />
+      <a href="/pcopito"><button>Copito</button></a>
       <br></br>
-      <img src="../images/perro2.jpg" alt="perro" width="100" height="100" />
-      <a href="../html/perros/pcausa.html"><button>Causa</button> </a>
+      <img src="{% static 'images/perro2.jpg' %}" alt="perro" width="100" height="100" />
+      <a href="/pcausa"><button>Causa</button> </a>
       <br></br>
-      <img src="../images/perro3.jpg" alt="perro" width="100" height="100" />
-      <a href="../html/perros/pmatapaco.html"><button>Matapaco</button></a>
+      <img src="{% static 'images/perro3.jpg' %}" alt="perro" width="100" height="100" />
+      <a href="/pmatapaco"><button>Matapaco</button></a>
     </center>
   </body>
 </html>
