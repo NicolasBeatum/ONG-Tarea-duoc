@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table">
+        {% if gatos %}
+        <thead>
+            <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Raza</th>
+                <th scope="col">Esterilizado</th>
+                <th scope="col">Fecha de Nacimiento</th>
+                <th scope="col">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for gato in gatos %}
+            <tr>
+                <td>{{ gato.cod_gato }}</td>
+                <td>{{ gato.nombre_gato }}</td>
+                <td>{{ gato.edad_gato }}</td>
+                <td>{{ gato.raza_gato }}</td>
+                <td>{{ gato.esterelizacion_gato }}</td>
+                <td>{{ gato.fecha_nac }}</td>
+                <td>
+                    <a href="{% url 'modificar_gato' gato.cod_gato %}" class="btn btn-primary">Modificar</a>
+                    <a href="{% url 'eliminar_gato' gato.cod_gato %}" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+                {% endfor %}
+            {% endif %}
+        </tbody>
+    </table>
+    <a href="/agregar" class="btn btn-primary">Añadir</a>
+
+</body>
+</html>

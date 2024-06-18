@@ -30,4 +30,10 @@ urlpatterns = [
     path('gefigen/', views.gefigen, name='gefigen'),
     path('ggrunon/', views.ggrunon, name='ggrunon'),
     path('gpelusa/', views.gpelusa, name='gpelusa'),
+    path('panel/', views.crud, name='mostrar'),
+    path('agregar/', views.agregar_gato, name='agregar'),
+    path('eliminar/<int:cod_gato>/', views.eliminar_gato, name='eliminar_gato'),
+    path('modificar/<int:cod_gato>/', views.modificar_gato, name='modificar_gato'),
+
+
 ]

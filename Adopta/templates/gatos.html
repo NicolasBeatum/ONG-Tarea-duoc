@@ -44,6 +44,32 @@
 
         <img src="{% static 'images/gato3.jpg' %}" alt="gato" width="100" height="100">
         <a href="/gpelusa"><button>Pelusa</button></a>
+        <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Código</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Edad</th>
+                    <th scope="col">Raza</th>
+                    <th scope="col">Esterilizado</th>
+                    <th scope="col">Fecha de Nacimiento</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for gato in gatos %}
+                <tr>
+                    <td>{{ gato.cod_gato }}</td>
+                    <td>{{ gato.nombre_gato }}</td>
+                    <td>{{ gato.edad_gato }}</td>
+                    <td>{{ gato.raza_gato }}</td>
+                    <td>{{ gato.esterelizacion_gato }}</td>
+                    <td>{{ gato.fecha_nac }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
     </center>
     </body>
 </html>
